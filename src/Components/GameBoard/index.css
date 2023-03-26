@@ -1,0 +1,75 @@
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+h4 {
+	margin: 5px;
+}
+
+.App {
+	padding: 15px;
+	border: 5px solid #ced9bf;
+	border-radius: 20px;
+}
+
+.turn-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+	margin: auto;
+	padding: 5px;
+	border: 1px solid #ced9bf;
+	border-radius: 20px;
+}
+
+.game-container {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(3, 1fr);
+	margin: 10px;
+	padding: 20px;
+	border: 1px solid #ced9bf;
+	border-radius: 20px;
+}
+
+.cell {
+	height: 5rem;
+	border: 1px solid #ced9bf;
+}
+
+.cell:disabled {
+	background-color: #2c3439;
+}
+
+.player-turn {
+	color: #2c3439;
+	background-color: #ced9bf;
+	font-weight: bold;
+	size: 5rem;
+	padding: 10px;
+	border-radius: 10px;
+	width: 85%;
+	margin-bottom: 10px;
+	border: solid #646cff;
+}
+
+.result-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+	margin: auto;
+	padding: 15px;
+	border: 1px solid #ced9bf;
+	border-radius: 20px;
+}
+
+.reset-button {
+	width: 100%;
+	color: #2c3439;
+	background-color: #ced9bf;
+}

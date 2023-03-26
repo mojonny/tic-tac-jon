@@ -1,4 +1,10 @@
-export function CheckWinner(nextArray, numberOfTurns, setDisabled, setMessage) {
+export function CheckWinner(
+	nextArray,
+	numberOfTurns,
+	setDisabled,
+	setMessage,
+	setIsWinner
+) {
 	//Get the values of each cell
 	const id0 = nextArray[0].value;
 	const id1 = nextArray[1].value;
@@ -23,8 +29,13 @@ export function CheckWinner(nextArray, numberOfTurns, setDisabled, setMessage) {
 		(id0 === 'X' && id4 === 'X' && id8 === 'X') ||
 		(id2 === 'X' && id4 === 'X' && id6 === 'X')
 	) {
+		setIsWinner(true);
+		setTimeout(() => {
+			setIsWinner(false);
+		}, 3000);
+
 		setDisabled(true);
-		return setMessage('Player X is the Winner!');
+		return setMessage('Player X wins!');
 	} else if (
 		(id0 === 'O' && id1 === 'O' && id2 === 'O') ||
 		(id3 === 'O' && id4 === 'O' && id5 === 'O') ||
@@ -35,10 +46,18 @@ export function CheckWinner(nextArray, numberOfTurns, setDisabled, setMessage) {
 		(id0 === 'O' && id4 === 'O' && id8 === 'O') ||
 		(id2 === 'O' && id4 === 'O' && id6 === 'O')
 	) {
+		setIsWinner(true);
+		setTimeout(() => {
+			setIsWinner(false);
+		}, 3000);
 		setDisabled(true);
-		return setMessage('Player O is the Winner!');
+		return setMessage('Player O wins!');
 	} else if (draw === 8) {
+		setIsWinner(true);
+		setTimeout(() => {
+			setIsWinner(false);
+		}, 3000);
 		setDisabled(true);
-		return setMessage('Draw! Shame on both your families');
+		return setMessage('Draw! Shame!');
 	}
 }
