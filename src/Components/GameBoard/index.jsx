@@ -3,6 +3,10 @@ import { CheckWinner } from '../CheckWinner';
 import Winner from '../Lotties/Winner/index';
 import Draw from '../Lotties/Draw';
 
+import Github from '../../assets/github.svg';
+import Web from '../../assets/web.png';
+import Linkedin from '../../assets/linkedin.svg';
+
 import './index.css';
 
 function GameBoard() {
@@ -110,6 +114,17 @@ function GameBoard() {
 				>
 					Reset
 				</button>
+			</div>
+			<div className="links">
+				<a href="https://github.com/mojonny">
+					<img className="image-link" src={Github} alt="github" />
+				</a>
+				<a href="https://www.jonnymoir.com" a>
+					<img className="image-link" src={Web} alt="website" />
+				</a>
+				<a href="https://www.linkedin.com/in/jonathanmoir/" a>
+					<img className="image-link" src={Linkedin} alt="linkedin" />
+				</a>
 			</div>
 			{isWinner ? <Winner message={message} /> : null}
 			{isDraw ? <Draw message={message} /> : null}

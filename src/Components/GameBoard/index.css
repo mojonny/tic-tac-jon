@@ -47,6 +47,7 @@ h4 {
 .cell:disabled {
 	background-color: #2c3439;
 	color: #646cff;
+	font-size: 1.5rem;
 	filter: drop-shadow(2px 2px 2px #2c3439);
 }
 
@@ -79,4 +80,16 @@ h4 {
 	color: #2c3439;
 	background-color: #ced9bf;
 	border: 5px solid #000000;
+}
+
+.image-link {
+	height: 25px;
+	width: 25px;
+	padding: 10px 15px 0px 15px;
+	filter: drop-shadow(5px 5px 5px #000000);
+}
+
+.image-link:hover {
+	transition: 500ms;
+	transform: scale(1.5);
 }
