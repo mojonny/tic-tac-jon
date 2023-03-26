@@ -1,18 +1,18 @@
 import React from 'react';
 import { useLottie } from 'lottie-react';
-import successAnimation from './successAnimation.json';
+import welcomeAnimation from './welcomeAnimation.json';
 
 import './index.css';
 
 export default function Welcome() {
 	const options = {
-		animationData: successAnimation,
+		animationData: welcomeAnimation,
 		loop: true,
 	};
 
 	const { View } = useLottie(options);
 	return (
-		<div className="success-layout">
+		<div className="welcome-layout fadeout">
 			<div className="animation">{View}</div>
 		</div>
 	);

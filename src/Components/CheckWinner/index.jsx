@@ -57,7 +57,7 @@ export function CheckWinner(
 		setIsDraw(true);
 		setTimeout(() => {
 			setIsDraw(false);
-		}, 10000);
+		}, 5000);
 		setDisabled(true);
 		return setMessage('Draw!');
 	}
