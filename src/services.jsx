@@ -39,6 +39,6 @@ export function CheckWinner(nextArray, numberOfTurns, setDisabled, setMessage) {
 		return setMessage('Player O is the Winner!');
 	} else if (draw === 8) {
 		setDisabled(true);
-		return setMessage('Draw! Great shame has fallen on both your families');
+		return setMessage('Draw! Shame on both your families');
 	}
 }

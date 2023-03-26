@@ -79,7 +79,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<h1>Jon-Jac-Joe</h1>
+			<h1>Tic-Tac-Jon</h1>
 			<div className="turn-container">
 				<h4>Who's turn is it?</h4>
 				<div className="player-turn">{showPlayer}</div>
