@@ -1,0 +1,23 @@
+.draw-layout {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #2c3439;
+	height: 110vh;
+	width: 110vw;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	margin: auto;
+	padding: 0;
+}
+
+.animation {
+	max-height: 500px;
+	max-width: 500px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}

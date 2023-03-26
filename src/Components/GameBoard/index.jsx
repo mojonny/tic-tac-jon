@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { CheckWinner } from '../CheckWinner';
 import Winner from '../Winner/index';
+import Draw from '../Draw';
 
 import './index.css';
 
@@ -36,7 +37,11 @@ function GameBoard() {
 	//Count number of turns in case of a draw
 	const [numberOfTurns, setNumberOfTurns] = useState(0);
 
+	//Show winner animation
 	const [isWinner, setIsWinner] = useState(false);
+
+	//Show draw animation
+	const [isDraw, setIsDraw] = useState(false);
 
 	//Show who's turn it is
 	function togglePlayer() {
@@ -64,7 +69,14 @@ function GameBoard() {
 			}
 		});
 		setTickTackArray(nextArray);
-		CheckWinner(nextArray, numberOfTurns, setDisabled, setMessage, setIsWinner);
+		CheckWinner(
+			nextArray,
+			numberOfTurns,
+			setDisabled,
+			setMessage,
+			setIsWinner,
+			setIsDraw
+		);
 		togglePlayer();
 		setNumberOfTurns(numberOfTurns + 1);
 	}
@@ -100,6 +112,7 @@ function GameBoard() {
 				</button>
 			</div>
 			{isWinner ? <Winner message={message} /> : null}
+			{isDraw ? <Draw message={message} /> : null}
 		</div>
 	);
 }

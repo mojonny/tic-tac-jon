@@ -3,7 +3,8 @@ export function CheckWinner(
 	numberOfTurns,
 	setDisabled,
 	setMessage,
-	setIsWinner
+	setIsWinner,
+	setIsDraw
 ) {
 	//Get the values of each cell
 	const id0 = nextArray[0].value;
@@ -32,7 +33,7 @@ export function CheckWinner(
 		setIsWinner(true);
 		setTimeout(() => {
 			setIsWinner(false);
-		}, 3000);
+		}, 5000);
 
 		setDisabled(true);
 		return setMessage('Player X wins!');
@@ -49,15 +50,15 @@ export function CheckWinner(
 		setIsWinner(true);
 		setTimeout(() => {
 			setIsWinner(false);
-		}, 3000);
+		}, 5000);
 		setDisabled(true);
 		return setMessage('Player O wins!');
 	} else if (draw === 8) {
-		setIsWinner(true);
+		setIsDraw(true);
 		setTimeout(() => {
-			setIsWinner(false);
-		}, 3000);
+			setIsDraw(false);
+		}, 10000);
 		setDisabled(true);
-		return setMessage('Draw! Shame!');
+		return setMessage('Draw!');
 	}
 }
