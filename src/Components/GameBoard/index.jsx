@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { CheckWinner } from '../CheckWinner';
-import Winner from '../Winner/index';
-import Draw from '../Draw';
+import Winner from '../Lotties/Winner/index';
+import Draw from '../Lotties/Draw';
 
 import './index.css';
 

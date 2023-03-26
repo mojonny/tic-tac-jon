@@ -11,18 +11,21 @@ h4 {
 
 .App {
 	padding: 15px;
-	border: 5px solid #ced9bf;
+	border: 5px solid #000000;
 	border-radius: 20px;
+	background-color: #2c3439;
+	box-shadow: 10px 5px 5px #646cff;
 }
 
 .turn-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background: linear-gradient(90deg, #fc466b 0%, #646cff 100%);
 	width: 80%;
 	margin: auto;
 	padding: 5px;
-	border: 1px solid #ced9bf;
+	border: 5px solid #000000;
 	border-radius: 20px;
 }
 
@@ -30,15 +33,16 @@ h4 {
 	display: grid;
 	gap: 10px;
 	grid-template-columns: repeat(3, 1fr);
+	background: linear-gradient(90deg, #fc466b 0%, #646cff 100%);
 	margin: 10px;
 	padding: 20px;
-	border: 1px solid #ced9bf;
+	border: 5px solid #000000;
 	border-radius: 20px;
 }
 
 .cell {
 	height: 5rem;
-	border: 1px solid #ced9bf;
+	border: 5px solid #000000;
 }
 
 .cell:disabled {
@@ -54,17 +58,18 @@ h4 {
 	border-radius: 10px;
 	width: 85%;
 	margin-bottom: 10px;
-	border: solid #646cff;
+	border: 5px solid #000000;
 }
 
 .result-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background: linear-gradient(90deg, #fc466b 0%, #646cff 100%);
 	width: 80%;
 	margin: auto;
 	padding: 15px;
-	border: 1px solid #ced9bf;
+	border: 5px solid #000000;
 	border-radius: 20px;
 }
 
@@ -72,4 +77,5 @@ h4 {
 	width: 100%;
 	color: #2c3439;
 	background-color: #ced9bf;
+	border: 5px solid #000000;
 }

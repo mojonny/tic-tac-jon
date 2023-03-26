@@ -1,21 +1,21 @@
 import React from 'react';
 import { useLottie } from 'lottie-react';
-import drawAnimation from './drawAnimation.json';
+import winnerAnimation from './winnerAnimation.json';
 
 import './index.css';
 
-export default function Draw({ message }) {
+export default function Winner({ message }) {
 	const options = {
-		animationData: drawAnimation,
+		animationData: winnerAnimation,
 		loop: true,
 	};
 
 	const { View } = useLottie(options);
 	return (
-		<div className="draw-layout">
+		<div className="winner-layout fadeoutWin">
 			<div className="animation">
-				{View}
 				<h1>{message}</h1>
+				{View}
 			</div>
 		</div>
 	);

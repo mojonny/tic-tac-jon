@@ -1,4 +1,4 @@
-.draw-layout {
+.winner-layout {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #2c3439;
@@ -20,4 +20,22 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.fadeoutWin {
+	opacity: 0;
+	-webkit-animation: fadeout 10s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadeout 10s; /* Firefox < 16 */
+	-ms-animation: fadeout 10s; /* Internet Explorer */
+	-o-animation: fadeout 10s; /* Opera < 12.1 */
+	animation: fadeout 10s;
+}
+
+@keyframes fadeout {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }

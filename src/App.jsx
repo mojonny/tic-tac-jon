@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import Welcome from './Components/Welcome/index';
+import Welcome from './Components/Lotties/Welcome/index';
 import GameBoard from './Components/GameBoard/index';
-import './App.css';
 
 function App() {
 	//Show lottie when loading and moving to success
@@ -11,14 +10,14 @@ function App() {
 		setIsLoading(true);
 		setTimeout(() => {
 			setIsLoading(false);
-		}, 8000);
+		}, 3000);
 	}, []);
 
 	return (
-		<div>
+		<>
 			<GameBoard />
 			{isLoading ? <Welcome /> : null}
-		</div>
+		</>
 	);
 }
 
