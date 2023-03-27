@@ -2,7 +2,10 @@
 
 FRONTEND CODE CHALLENGE 1
 
+Intro:
 In this challenge, I created a Tic Tac Toe game using React.
+I chose to use Vite to create this app for a quicker developer experience.
+The app is deployed with vercel at: https://tic-tac-jon.vercel.app/
 
 Getting Started:
 Clone the repository git clone https://github.com/mojonny/tic-tac-jon.git
