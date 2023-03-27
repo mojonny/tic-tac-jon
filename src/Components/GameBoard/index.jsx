@@ -58,6 +58,7 @@ function GameBoard() {
 	}
 
 	//This function updates the game board and indicates who's turn it is
+	//It also checks if there is a winner and responds accordingly
 	function updateArray(index, playerTurn) {
 		let turn = playerTurn;
 

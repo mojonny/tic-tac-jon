@@ -14,8 +14,8 @@ export default function Draw({ message }) {
 	return (
 		<div className="draw-layout fadeoutDraw">
 			<div className="animation">
-				{View}
 				<h1>{message}</h1>
+				{View}
 			</div>
 		</div>
 	);
