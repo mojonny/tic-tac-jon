@@ -120,10 +120,10 @@ function GameBoard() {
 				<a href="https://github.com/mojonny">
 					<img className="image-link" src={Github} alt="github" />
 				</a>
-				<a href="https://www.jonnymoir.com" a>
+				<a href="https://www.jonnymoir.com">
 					<img className="image-link" src={Web} alt="website" />
 				</a>
-				<a href="https://www.linkedin.com/in/jonathanmoir/" a>
+				<a href="https://www.linkedin.com/in/jonathanmoir/">
 					<img className="image-link" src={Linkedin} alt="linkedin" />
 				</a>
 			</div>
