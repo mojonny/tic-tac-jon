@@ -6,10 +6,8 @@ In this challenge, I created a Tic Tac Toe game using React. I used Vite to make
 
 The app is deployed with Vercel at: https://tic-tac-jon.vercel.app/
 
-Getting Started:
-Clone the repository git clone https://github.com/mojonny/tic-tac-jon.git
-
 Running the code: 
+Clone the repository git clone https://github.com/mojonny/tic-tac-jon.git
 Run npm install 
 Change directories to the root folder then, 
 Run npm run dev
