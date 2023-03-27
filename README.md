@@ -10,7 +10,9 @@ Getting Started:
 Clone the repository git clone https://github.com/mojonny/tic-tac-jon.git
 
 Running the code: 
-Run npm install Change directories to the root folder then, Run npm run dev
+Run npm install 
+Change directories to the root folder then, 
+Run npm run dev
 
 App Features:
 
